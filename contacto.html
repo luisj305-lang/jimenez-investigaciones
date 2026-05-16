@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Contacto · Jiménez Investigaciones</title>
+<meta name="description" content="Solicite una consulta confidencial. Toda comunicación es privada y sin compromiso."/>
+<meta property="og:title" content="Contacto · Jiménez Investigaciones"/>
+<meta property="og:description" content="Consulta confidencial sin compromiso."/>
+<meta property="og:type" content="website"/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230E0E0C'/><rect x='4' y='4' width='24' height='24' rx='3' fill='none' stroke='%238B1A2B' stroke-width='2'/><circle cx='16' cy='16' r='4' fill='%238B1A2B'/></svg>"/>
+<link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="index.html" class="brand">
+      <div class="brand__mark"></div>
+      <span class="brand__name">Jiménez <small>Investigaciones</small></span>
+    </a>
+    <button class="nav-toggle" onclick="document.querySelector('.nav').classList.toggle('is-open')" aria-label="Menú">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="nav">
+      <a href="servicios.html">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="contacto.html" class="cta-nav">Abrir un caso</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <div class="accent-line"></div>
+      <h1>Abrir un caso</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container--narrow">
+      <div class="section__header section__header--left">
+        <div class="accent-line"></div>
+        <h2>Consulta confidencial</h2>
+        <p>Toda comunicación con Jiménez Investigaciones es estrictamente confidencial. Describa su situación con la mayor claridad posible. Su información nunca se comparte con terceros.</p>
+      </div>
+
+      <form class="form" action="#" method="POST" netlify data-netlify="true" name="contacto">
+        <input type="hidden" name="form-name" value="contacto"/>
+
+        <div class="form-group">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Su nombre y apellido"/>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required placeholder="su@correo.com"/>
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono <span style="font-weight:400;text-transform:none;letter-spacing:0;">(opcional)</span></label>
+          <input type="tel" id="telefono" name="telefono" placeholder="+1 (555) 000-0000"/>
+        </div>
+
+        <div class="form-group">
+          <label for="tipo">Tipo de consulta</label>
+          <select id="tipo" name="tipo">
+            <option value="">Seleccione una opción</option>
+            <option value="amenazas">Inteligencia de Amenazas</option>
+            <option value="marca">Protección de Marca</option>
+            <option value="exposicion">Evaluación de Exposición</option>
+            <option value="personas">Investigación de Personas</option>
+            <option value="corporativo">OSINT Corporativo</option>
+            <option value="whistleblower">Whistleblower IRS</option>
+            <option value="otro">Otro / No estoy seguro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Describa su caso</label>
+          <textarea id="mensaje" name="mensaje" required placeholder="Cuéntenos qué necesita investigar. Incluya fechas, nombres y cualquier detalle relevante. Mientras más contexto, mejor podremos evaluar su caso."></textarea>
+        </div>
+
+        <p class="form-disclaimer">
+          Al enviar este formulario, reconoce que esta comunicación no establece una relación investigador-cliente hasta que Jiménez Investigaciones confirme por escrito la aceptación del caso. Consulte nuestra <a href="privacidad.html">política de privacidad</a>.
+        </p>
+
+        <button type="submit" class="btn btn--primary btn--lg" style="width:100%;justify-content:center;">Enviar consulta confidencial</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section section--panel">
+    <div class="container container--narrow" style="text-align:center;">
+      <p class="eyebrow">Contacto directo</p>
+      <h3 style="margin-bottom:var(--space-2);">Clewiston, Florida</h3>
+      <p style="color:var(--fg-muted);">Atendemos casos en todo el estado de Florida y, mediante OSINT, sin fronteras geográficas.</p>
+      <p style="font-size:var(--fs-body-sm);color:var(--ji-muted-2);margin-top:var(--space-4);">
+        Las consultas son atendidas personalmente por Luis Jiménez Camacho, Investigador Principal.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <span class="brand__name">Jiménez <small>Investigaciones</small></span>
+        <p>Investigación privada profesional con base en Clewiston, Florida.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Servicios</h4>
+        <a href="servicios.html#threat-intelligence">Inteligencia de Amenazas</a>
+        <a href="servicios.html#brand-protection">Protección de Marca</a>
+        <a href="servicios.html#exposure-assessment">Evaluación de Exposición</a>
+        <a href="servicios.html#investigacion-personas">Investigación de Personas</a>
+      </div>
+      <div class="footer__col">
+        <h4>Más</h4>
+        <a href="servicios.html#osint-corporativo">OSINT Corporativo</a>
+        <a href="servicios.html#whistleblower">Whistleblower IRS</a>
+        <a href="servicios.html">Todos los servicios</a>
+      </div>
+      <div class="footer__col">
+        <h4>Legal</h4>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="terminos.html">Términos</a>
+        <a href="index.html">Inicio</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Jiménez Investigaciones · Clewiston, Florida</span>
+      <span>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="terminos.html">Términos</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.nav a').forEach(function(link) {
+  link.addEventListener('click', function() {
+    document.querySelector('.nav').classList.remove('is-open');
+  });
+});
+</script>
+</body>
+</html>
